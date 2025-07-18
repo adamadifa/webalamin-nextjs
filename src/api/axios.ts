@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Ganti URL ini dengan base URL API kamu
 const api = axios.create({
-  baseURL: process.env.BASE_API_URL || 'http://localhost:8000/api',
+  baseURL: process.env.BASE_API_URL || 'https://siprenpas.my.id/api',
   timeout: 10000, // 10 detik timeout
   headers: {
     'Content-Type': 'application/json',
@@ -35,8 +35,10 @@ api.interceptors.response.use(
   error => {
     // Handle error global
     if (error.response.status === 401) {
-      // Misal: redirect ke halaman login
+      // Jangan redirect jika di halaman register
+      if (typeof window !== 'undefined' && window.location.pathname !== '/register') {
       window.location.href = '/login';
+      }
     }
     return Promise.reject(error);
   }

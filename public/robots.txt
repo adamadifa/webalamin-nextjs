@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://wa.siprenpas.my.id
+
+# Sitemaps
+Sitemap: https://wa.siprenpas.my.id/sitemap.xml

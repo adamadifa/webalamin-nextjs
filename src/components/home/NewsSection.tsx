@@ -76,46 +76,46 @@ const NewsSection = () => {
 
   return (
     <div className="w-full">
-      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-3 sm:mb-4 gap-2 sm:gap-0">
-        <h3 className="text-lg sm:text-xl font-bold text-gray-800">Latest News</h3>
-        <Link href="/news" className="text-teal-700 font-semibold hover:underline transition text-sm sm:text-base">Lihat Semua Berita</Link>
+      <div className="flex justify-between items-center mb-4">
+        <h3 className="text-xl font-bold text-gray-800">Latest News</h3>
+        <Link href="/news" className="text-teal-700 font-semibold hover:underline transition">Lihat Semua Berita</Link>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-4 md:gap-6 h-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-full">
         {/* Kiri besar */}
-        <Link href={`/news/${news[0].slug}`} className="rounded-2xl overflow-hidden relative group cursor-pointer">
-          <Image src={news[0].img} alt={news[0].title} width={400} height={400} className="object-cover w-full h-40 sm:h-56 md:h-64 group-hover:scale-105 transition-transform duration-300" />
+        <Link href={`/news/${news[0].slug}`} className="row-span-2 col-span-1 rounded-2xl overflow-hidden relative group cursor-pointer">
+          <Image src={news[0].img} alt={news[0].title} width={400} height={400} className="object-cover w-full h-56 md:h-64 group-hover:scale-105 transition-transform duration-300" />
           <div className="absolute inset-0 bg-black/30 z-0"></div>
-          <div className="absolute inset-0 flex flex-col justify-end p-3 sm:p-4">
-            <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-indigo-500/80 text-white text-xs px-2 sm:px-3 py-1 rounded shadow-md z-10">
+          <div className="absolute inset-0 flex flex-col justify-end p-4">
+            <div className="absolute top-4 left-4 bg-indigo-500/80 text-white text-xs px-3 py-1 rounded shadow-md z-10">
               {news[0].category}
             </div>
-            <div className="text-white text-base sm:text-lg md:text-xl font-semibold drop-shadow-lg mt-8 mb-2 z-10">
+            <div className="text-white text-lg md:text-xl font-semibold drop-shadow-lg mt-12 mb-2 z-10">
               {news[0].title}
             </div>
           </div>
         </Link>
         {/* Kanan atas */}
-        <Link href={`/news/${news[1].slug}`} className="rounded-2xl overflow-hidden relative group cursor-pointer">
-          <Image src={news[1].img} alt={news[1].title} width={400} height={180} className="object-cover w-full h-28 sm:h-28 md:h-32 group-hover:scale-105 transition-transform duration-300" />
+        <Link href={`/news/${news[1].slug}`} className="col-span-1 rounded-2xl overflow-hidden relative group cursor-pointer">
+          <Image src={news[1].img} alt={news[1].title} width={400} height={180} className="object-cover w-full h-28 md:h-32 group-hover:scale-105 transition-transform duration-300" />
           <div className="absolute inset-0 bg-black/30 z-0"></div>
-          <div className="absolute inset-0 flex flex-col justify-end p-2 sm:p-3">
-            <div className="absolute top-2 left-2 sm:top-3 sm:left-3 bg-teal-500/80 text-white text-xs px-2 sm:px-3 py-1 rounded shadow-md z-10">
+          <div className="absolute inset-0 flex flex-col justify-end p-3">
+            <div className="absolute top-3 left-3 bg-teal-500/80 text-white text-xs px-3 py-1 rounded shadow-md z-10">
               {news[1].category}
             </div>
-            <div className="text-white text-sm sm:text-base font-semibold drop-shadow-lg mt-6 sm:mt-8 mb-1 z-10">
+            <div className="text-white text-base font-semibold drop-shadow-lg mt-8 mb-1 z-10">
               {news[1].title}
             </div>
           </div>
         </Link>
         {/* Kanan bawah kiri */}
-        <Link href={`/news/${news[2].slug}`} className="rounded-2xl overflow-hidden relative group cursor-pointer">
-          <Image src={news[2].img} alt={news[2].title} width={400} height={180} className="object-cover w-full h-28 sm:h-28 md:h-32 group-hover:scale-105 transition-transform duration-300" />
+        <Link href={`/news/${news[2].slug}`} className="col-span-1 rounded-2xl overflow-hidden relative group cursor-pointer">
+          <Image src={news[2].img} alt={news[2].title} width={400} height={180} className="object-cover w-full h-28 md:h-32 group-hover:scale-105 transition-transform duration-300" />
           <div className="absolute inset-0 bg-black/30 z-0"></div>
-          <div className="absolute inset-0 flex flex-col justify-end p-2 sm:p-3">
-            <div className="absolute top-2 left-2 sm:top-3 sm:left-3 bg-orange-500/80 text-white text-xs px-2 sm:px-3 py-1 rounded shadow-md z-10">
+          <div className="absolute inset-0 flex flex-col justify-end p-3">
+            <div className="absolute top-3 left-3 bg-orange-500/80 text-white text-xs px-3 py-1 rounded shadow-md z-10">
               {news[2].category}
             </div>
-            <div className="text-white text-sm sm:text-base font-semibold drop-shadow-lg mt-6 sm:mt-8 mb-1 z-10">
+            <div className="text-white text-base font-semibold drop-shadow-lg mt-8 mb-1 z-10">
               {news[2].title}
             </div>
           </div>
