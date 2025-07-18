@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://wa.siprenpas.my.id
+Host: https://persis80alamin.com
 
 # Sitemaps
-Sitemap: https://wa.siprenpas.my.id/sitemap.xml
+Sitemap: https://persis80alamin.com/sitemap.xml
