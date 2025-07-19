@@ -1,16 +1,16 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/api/proxy-image": "pages/api/proxy-image.js",
   "/dashboard": "pages/dashboard.html",
-  "/formulirpendaftaran/pdf-preview": "pages/formulirpendaftaran/pdf-preview.html",
+  "/api/proxy-image": "pages/api/proxy-image.js",
   "/formulirpendaftaran": "pages/formulirpendaftaran.html",
-  "/konfirmasipembayaran": "pages/konfirmasipembayaran.html",
-  "/news/[slug]": "pages/news/[slug].html",
+  "/formulirpendaftaran/pdf-preview": "pages/formulirpendaftaran/pdf-preview.html",
   "/": "pages/index.html",
+  "/konfirmasipembayaran": "pages/konfirmasipembayaran.html",
   "/login": "pages/login.html",
+  "/news/[slug]": "pages/news/[slug].html",
   "/news": "pages/news.html",
   "/register": "pages/register.html",
+  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/404": "pages/404.html"
 }
