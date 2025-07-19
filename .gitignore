@@ -14,7 +14,7 @@
 /coverage
 
 # next.js
-/.next/
+# /.next/  # Dihapus agar hasil build bisa di-push ke GitHub
 /out/
 
 # production
