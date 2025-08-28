@@ -8,7 +8,7 @@ const HeroSection = () => {
     return (
         <div className="relative dotted-background">
             <div className="container mx-auto px-6 lg:px-12 pt-28">
-                <main className="relative grid grid-cols-1 md:grid-cols-12 items-end pt-8 md:pt-12 pb-24 md:pb-32 z-10 gap-y-8 md:gap-x-8">
+                <main className="relative grid grid-cols-1 md:grid-cols-12 items-end pt-8 md:pt-12 pb-10 md:pb-32 z-10 gap-y-8 md:gap-x-8">
                     {/* Gambar Kiri MOBILE */}
                     <div className="block md:hidden mb-0 pb-2 overflow-visible">
                         <div className="relative flex justify-center items-center">

@@ -53,7 +53,7 @@ const ReasonSection = () => {
         </div>
         {/* Right: Text & List */}
         <div className="md:w-1/2">
-          <h2 className="text-xl md:text-4xl font-bold text-gray-900 leading-snug text-center md:text-left">
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-900 leading-snug text-center md:text-left">
             Program Unggulan <span className="text-yellow-500">Pesantren</span>
           </h2>
           <div className="mt-5 md:mt-8 space-y-4 md:space-y-7">
@@ -65,7 +65,7 @@ const ReasonSection = () => {
                 </div>
                 <div>
                   <div className="font-semibold text-base md:text-lg text-gray-900">{r.title}</div>
-                  <div className="text-gray-500 text-xs md:text-sm mt-1">{r.desc}</div>
+                  <div className="text-gray-500 text-sm md:text-base mt-1">{r.desc}</div>
                 </div>
               </div>
             ))}

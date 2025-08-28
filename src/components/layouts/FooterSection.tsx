@@ -4,27 +4,41 @@ import { Facebook, Youtube, Instagram, Music } from "react-feather";
 const FooterSection = () => {
   return (
     <footer className="bg-[#f8fbff] pt-24 pb-0">
-      {/* Call to Action Pendaftaran */}
-      <div className="max-w-4xl mx-auto mt-2 mb-8 px-4">
-        <div className="rounded-2xl bg-teal-700 text-white flex flex-col md:flex-row items-center justify-between p-8 md:p-10 shadow-lg relative z-10">
-          <div className="flex-1 flex flex-col gap-3 mb-6 md:mb-0">
-            <h3 className="text-2xl md:text-3xl font-extrabold mb-2 drop-shadow-sm">Ayo Daftarkan Putra-Putri Anda!</h3>
-            <p className="text-white/90 text-base md:text-lg mb-4 leading-relaxed max-w-2xl drop-shadow-sm">Bergabunglah bersama <span className='font-bold text-yellow-200'>Pesantren Persatuan Islam 80 Al Amin</span> dan wujudkan generasi berakhlak mulia, cerdas, dan berprestasi. <span className='font-semibold text-yellow-100'>Segera lakukan pendaftaran untuk tahun ajaran baru!</span></p>
-            <div className="mt-2">
-              <a href="/register" className="inline-block bg-white text-teal-700 font-bold px-8 py-3 rounded-full shadow hover:bg-yellow-300 hover:text-teal-900 transition text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:ring-offset-2" style={{ minWidth: 180 }}>
-                Daftar Sekarang
-              </a>
+      {/* Call to Action Pendaftaran - MOBILE */}
+      <div className="block md:hidden px-4 mb-4">
+        <div className="rounded-xl bg-teal-700 text-white flex flex-col items-center p-5 shadow-lg">
+          <h3 className="text-lg font-bold mb-1 text-center">Ayo Daftarkan Putra-Putri Anda!</h3>
+          <p className="text-white/90 text-sm mb-3 text-center">
+            <span className="font-bold text-yellow-200">Pesantren Persatuan Islam 80 Al Amin</span> membuka pendaftaran baru!
+          </p>
+          <a href="/register" className="w-full bg-white text-teal-700 font-bold px-4 py-2 rounded-full shadow hover:bg-yellow-300 hover:text-teal-900 transition text-base text-center">
+            Daftar Sekarang
+          </a>
+        </div>
+      </div>
+      {/* Call to Action Pendaftaran - DESKTOP */}
+      <div className="hidden md:block">
+        <div className="max-w-4xl mx-auto mt-2 mb-8 px-4">
+          <div className="rounded-2xl bg-teal-700 text-white flex flex-col md:flex-row items-center justify-between p-8 md:p-10 shadow-lg relative z-10">
+            <div className="flex-1 flex flex-col gap-3 mb-6 md:mb-0">
+              <h3 className="text-2xl md:text-3xl font-extrabold mb-2 drop-shadow-sm">Ayo Daftarkan Putra-Putri Anda!</h3>
+              <p className="text-white/90 text-base md:text-lg mb-4 leading-relaxed max-w-2xl drop-shadow-sm">Bergabunglah bersama <span className='font-bold text-yellow-200'>Pesantren Persatuan Islam 80 Al Amin</span> dan wujudkan generasi berakhlak mulia, cerdas, dan berprestasi. <span className='font-semibold text-yellow-100'>Segera lakukan pendaftaran untuk tahun ajaran baru!</span></p>
+              <div className="mt-2">
+                <a href="/register" className="inline-block bg-white text-teal-700 font-bold px-8 py-3 rounded-full shadow hover:bg-yellow-300 hover:text-teal-900 transition text-base md:text-lg focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:ring-offset-2" style={{ minWidth: 180 }}>
+                  Daftar Sekarang
+                </a>
+              </div>
             </div>
-          </div>
-          <div className="relative flex justify-center items-end w-36 h-36 md:w-48 md:h-48 overflow-visible mt-4 md:mt-0">
-            <Image
-              src="/assets/images/model4.png"
-              width={192}
-              height={240}
-              alt="Pendaftaran"
-              className="object-contain absolute left-1/2 bottom-0 -translate-x-1/2 -translate-y-1/4 drop-shadow-xl"
-              style={{ zIndex: 2 }}
-            />
+            <div className="relative flex justify-center items-end w-36 h-36 md:w-48 md:h-48 overflow-visible mt-4 md:mt-0">
+              <Image
+                src="/assets/images/model4.png"
+                width={192}
+                height={240}
+                alt="Pendaftaran"
+                className="object-contain absolute left-1/2 bottom-0 -translate-x-1/2 -translate-y-1/4 drop-shadow-xl"
+                style={{ zIndex: 2 }}
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 // Migrated from app/login/page.tsx
 import Head from 'next/head';
+import Link from 'next/link';
 import React, { useState } from "react";
 import { Mail, Lock, Eye, EyeOff } from "react-feather";
 import api from '../api/axios';
@@ -204,7 +205,7 @@ export default function LoginPage() {
             </form>
             <div className="mt-8 text-center text-sm text-gray-500">
               Don't have an Account?{' '}
-              <a href="#" className="text-teal-700 font-semibold hover:underline">Sign Up</a>
+              <Link href="/register" className="text-teal-700 font-semibold hover:underline">Sign Up</Link>
             </div>
           </div>
         </div>
